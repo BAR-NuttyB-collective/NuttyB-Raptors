@@ -18,7 +18,10 @@ return {
 		customparams = {
 			evolution_target = 'legcomlvl2',
 			evolution_condition = 'timer_global',
-			evolution_timer = 420
+			evolution_timer = 420,
+			inheritxpratemultiplier = 0.5,
+			childreninheritxp = "TURRET MOBILEBUILT",
+			parentsinheritxp = "TURRET MOBILEBUILT"
 		},
 		weapondefs = {
 			legcomlaser = {
@@ -98,7 +101,10 @@ return {
 		health = 6700,
 		customparams = {
 			evolution_condition = 'timer_global',
-			evolution_timer = 1020
+			evolution_timer = 1020,
+			inheritxpratemultiplier = 0.5,
+			childreninheritxp = "TURRET MOBILEBUILT",
+			parentsinheritxp = "TURRET MOBILEBUILT"
 		},
 		buildoptions = {
 			'legrezbot',
@@ -218,7 +224,10 @@ return {
 		health = 7500,
 		customparams = {
 			evolution_condition = 'timer_global',
-			evolution_timer = 1440
+			evolution_timer = 1440,
+			inheritxpratemultiplier = 0.5,
+			childreninheritxp = "TURRET MOBILEBUILT",
+			parentsinheritxp = "TURRET MOBILEBUILT"
 		},
 		buildoptions = {
 			'legdeflector',
@@ -350,7 +359,10 @@ return {
 		health = 24500,
 		customparams = {
 			evolution_condition = 'timer_global',
-			evolution_timer = 1740
+			evolution_timer = 1740,
+			inheritxpratemultiplier = 0.5,
+			childreninheritxp = "TURRET MOBILEBUILT",
+			parentsinheritxp = "TURRET MOBILEBUILT"
 		},
 		buildoptions = {
 			'legdeflector',
@@ -498,6 +510,11 @@ return {
 		workertime = 1700,
 		autoheal = 4500,
 		health = 53900,
+		customparams = {
+			inheritxpratemultiplier = 0.5,
+			childreninheritxp = "TURRET MOBILEBUILT",
+			parentsinheritxp = "TURRET MOBILEBUILT"
+		},
 		buildoptions = {
 			'legdeflector',
 			'legfus',
