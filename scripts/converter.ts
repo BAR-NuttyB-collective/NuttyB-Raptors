@@ -2,7 +2,7 @@ import base64url from 'base64url'
 import path from 'path'
 import os from 'os'
 import { promises as fs } from 'fs'
-import { execSync } from 'child_process'
+// import { execSync } from 'child_process'
 const clipboardy = import('clipboardy')
 
 const luamin = require('luamin')
@@ -188,25 +188,25 @@ function extractTopComments(content: string) {
 	return commentString
 }
 
-async function optimizeAst(luaCode: string): Promise<string> {
-	try {
-		// Call the Python AST optimizer script
-		const astOptimizerPath = path.join(__dirname, 'ast_optimizer.py')
-		const optimizedCode = execSync(`python3 ${astOptimizerPath}`, {
-			input: luaCode,
-			encoding: 'utf-8',
-			timeout: 10000, // 10 second timeout
-		})
-
-		return optimizedCode.trim()
-	} catch (error) {
-		console.warn(
-			'AST optimization failed, falling back to original code:',
-			(error as Error).message,
-		)
-		return luaCode
-	}
-}
+// async function _optimizeAst(luaCode: string): Promise<string> {
+// 	try {
+// 		// Call the Python AST optimizer script
+// 		const astOptimizerPath = path.join(__dirname, 'ast_optimizer.py')
+// 		const optimizedCode = execSync(`python3 ${astOptimizerPath}`, {
+// 			input: luaCode,
+// 			encoding: 'utf-8',
+// 			timeout: 10000, // 10 second timeout
+// 		})
+// 
+// 		return optimizedCode.trim()
+// 	} catch (error) {
+// 		console.warn(
+// 			'AST optimization failed, falling back to original code:',
+// 			(error as Error).message,
+// 		)
+// 		return luaCode
+// 	}
+// }
 
 async function luaFileToBase64Url(
 	srcPath: string,
@@ -264,11 +264,11 @@ async function luaFileToBase64Url(
 		})
 }
 
-function normalizeLuaFileArgument(input: string): string {
-	const base = input.replace(/\.lua$/, '')
-	const name = base.startsWith('tweak') ? base : 'tweak' + base
-	return name
-}
+// function _normalizeLuaFileArgument(input: string): string {
+// 	const base = input.replace(/\.lua$/, '')
+// 	const name = base.startsWith('tweak') ? base : 'tweak' + base
+// 	return name
+// }
 
 async function main() {
 	if (process.argv.length <= 2) {
