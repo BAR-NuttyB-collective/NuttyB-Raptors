@@ -234,6 +234,13 @@ for _, faction in pairs(factions) do
 
 	-- Buildoptions for T3 Gantrys (Ground)
 	local factoryName = isArm and 'armshltx' or isCor and 'corgant' or 'leggant'
+    
+    -- Limit Bot Gantrys to 1
+    unitDefs[factoryName].maxthisunit = 1
+
+    -- Limit AIR Gantrys to 1
+    unitDefs[faction .. 'apt3'].maxthisunit = 1
+
 	if unitDefs[factoryName] and unitDefs[factoryName].buildoptions then
 		local groundAide = faction .. 't3aide'
 		if not tableContains(unitDefs[factoryName].buildoptions, groundAide) then
