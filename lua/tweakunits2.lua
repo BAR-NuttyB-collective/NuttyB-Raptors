@@ -95,7 +95,7 @@ return {
 				stockpile = true,
 				stockpiletime = 7,
 				customparams = {
-					stockpilelimit = 5
+					stockpilelimit = 10
 				},
 				texture1 = 'shot',
 				texture2 = 'empty',
@@ -245,7 +245,7 @@ return {
 				stockpile = true,
 				stockpiletime = 6,
 				customparams = {
-					stockpilelimit = 10
+					stockpilelimit = 20
 				},
 				texture1 = 'shot',
 				texture2 = 'empty',
@@ -376,7 +376,7 @@ return {
 				stockpile = true,
 				stockpiletime = 3,
 				customparams = {
-					stockpilelimit = 10
+					stockpilelimit = 20
 				},
 				texture1 = 'shot',
 				texture2 = 'empty',
@@ -548,7 +548,7 @@ return {
 				stockpile = true,
 				stockpiletime = 2,
 				customparams = {
-					stockpilelimit = 15
+					stockpilelimit = 30
 				},
 				texture1 = 'shot',
 				texture2 = 'empty',
