@@ -13,7 +13,9 @@ return {
 			'legdtf',
 			'legdtr',
 			'legjam',
-			'legwin'
+			'legwin',
+			'leglab',
+			'legeconv'
 		},
 		customparams = {
 			evolution_target = 'legcomlvl2',
@@ -120,6 +122,7 @@ return {
 			'legdtr',
 			'legrhapsis',
 			'legwin',
+			'legeconv'
 		},
 		weapondefs = {
 			legcomlaser = {
@@ -251,7 +254,7 @@ return {
 			'leglab',
 			'legendary_bastion',
 			'legnanotct3',
-			'legapopupdef'
+			'legapopupdef',
 		},
 		weapondefs = {
 			legcomlaser = {
@@ -404,7 +407,9 @@ return {
 			'legelrpcmech',
 			'legdtr',
 			'legnanotct3',
-			'legapopupdef'
+			'legapopupdef',
+			'leglrpc',
+			'armannit3'
 		},
 		weapondefs = {
 			legcomlaser = {
@@ -555,7 +560,9 @@ return {
 			'legelrpcmech',
 			'legdtr',
 			'legnanotct3',
-			'legapopupdef'
+			'legapopupdef',
+			'leglrpc',
+			'armannit3'
 		},
 		weapondefs = {
 			machinegun = {
