@@ -3,7 +3,6 @@
 		"base64url": "^3.0.1",
 		"clipboardy": "^4.0.0",
 		"lua-format": "^1.5.2",
-		"luamin": "^1.0.4",
 		"node": "^23.11.0",
 		"ts-node": "^10.9.2"
 	},

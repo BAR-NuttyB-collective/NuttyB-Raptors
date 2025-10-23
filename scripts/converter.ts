@@ -5,7 +5,6 @@ import { promises as fs } from 'fs'
 // import { execSync } from 'child_process'
 const clipboardy = import('clipboardy')
 
-const luamin = require('luamin')
 const luafmt = require('lua-format')
 
 const defaultTweakResult = {
@@ -227,8 +226,19 @@ async function luaFileToBase64Url(
 		minified =
 			extractTopComments(optimizedContent) +
 			(destPath.includes('units')
-				? luamin.minify(optimizedContent).replace(/.*?(\{.*)/, '$1')
-				: luamin.minify(optimizedContent))
+				? luafmt
+						.Minify(optimizedContent, {
+							RenameVariables: true,
+							RenameGlobals: false,
+							SolveMath: true,
+						})
+						.replace(/.*?(\{.*)/, '$1')
+				: luafmt.Minify(optimizedContent, {
+					RenameVariables: true,
+					RenameGlobals: false,
+					SolveMath: true,
+				})
+			)
 	} catch (err) {
 		console.error(err)
 		process.exit(0)
