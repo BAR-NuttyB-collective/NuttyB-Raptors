@@ -5,9 +5,9 @@ All notable changes to this project are documented in this file. This changelog 
 ## 2025-10
 
 ### Added
-- 2025-10-23: **feat: launcher rebalance - unified range (7550) and reload (0.5s) across all launchers** - *00fast00*
+- 2025-10-23: **feat: launcher rebalance - unified range (7550) and reload (0.5s) across all launchers** [docs](docs/2025-10-23_launcher_rebalance.md) - *00fast00*
 - 2025-10-23: **feat: expand legion commander buildoptions** - Added leglab, legeconv, leglrpc, armannit3 to various legion commander levels for more strategic options - *00fast00*
-- 2025-10-22: **feat: LRPC rebalance V3** - Adjustments to armbrtha, corint, and leglrpc for better balance - *00fast00*
+- 2025-10-22: **feat: LRPC rebalance V3** - Adjustments to armbrtha, corint, and leglrpc for better balance [docs](docs/2025-10-22_lrpc_rebalance.md) - *00fast00*
 - 2025-10-22: **feat: double arm com stockpile** - *00fast00*
 - 2025-10-22: **feat: add exp inheritance to all commanders** - *00fast00*
 - 2025-10-22: **feat: limit T3 Factories to 1** - *00fast00*
