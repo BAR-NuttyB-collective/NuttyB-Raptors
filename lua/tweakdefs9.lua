@@ -30,7 +30,7 @@ local NewUnits = {
 		weapondefs = {
 			arm_botrail = {
 				range = 7550,
-				metalpershot = 12500,
+				metalpershot = 15000,
 				energypershot = 384000,
 				reloadtime = 0.5,
 				customparams = {
@@ -43,25 +43,25 @@ local NewUnits = {
 	legjav = {
 		customparams = { i18n_en_humanname = 'Javelin Launcher'},
 		weapondefs = {
-			arm_botrail = { range = 7550, metalpershot = 2150, energypershot = 102400, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'legjav' } },
+			arm_botrail = { range = 7550, metalpershot = 3000, energypershot = 102400, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'legjav' } },
 		},
 	},
 	armraz = {
 		customparams = { i18n_en_humanname = 'Razorback Launcher',  },
 		weapondefs = {
-			arm_botrail = { range = 7550, metalpershot = 6750, energypershot = 283520, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'armraz' } },
+			arm_botrail = { range = 7550, metalpershot = 8000, energypershot = 283520, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'armraz' } },
 		},
 	},
 	corakt4 = {
 		customparams = { i18n_en_humanname = 'Epic Grund Launcher',  },
 		weapondefs = {
-			arm_botrail = { range = 7550, metalpershot = 10700, energypershot = 384000, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'corakt4' } },
+			arm_botrail = { range = 7550, metalpershot = 15000, energypershot = 384000, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'corakt4' } },
 		},
 	},
 	cordemon = {
 		customparams = { i18n_en_humanname = 'Demon Launcher', },
 		weapondefs = {
-			arm_botrail = { range = 7550, metalpershot = 10700, energypershot = 384000, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'cordemon' } },
+			arm_botrail = { range = 7550, metalpershot = 15000, energypershot = 384000, reloadtime = 0.5, customparams = { stockpilelimit = 50, spawns_name = 'cordemon' } },
 		},
 	},
 	armvader = {
@@ -82,7 +82,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 0.5,
 				range = 7550,
-				metalpershot = 250,
+				metalpershot = 300,
 				energypershot = 12500,
 				reloadtime = 0.5,
 				customparams = {
@@ -99,7 +99,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 1,
 				range = 7550,
-				metalpershot = 970,
+				metalpershot = 1000,
 				energypershot = 45000,
 				reloadtime = 0.5,
 				customparams = {
@@ -116,7 +116,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 2,
 				range = 7550,
-				metalpershot = 8500,
+				metalpershot = 15000,
 				energypershot = 180000,
 				reloadtime = 0.5,
 				customparams = {
@@ -133,7 +133,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 0.5,
 				range = 7550,
-				metalpershot = 250,
+				metalpershot = 300,
 				energypershot = 12500,
 				reloadtime = 0.5,
 				customparams = {
@@ -150,7 +150,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 1,
 				range = 7550,
-				metalpershot = 970,
+				metalpershot = 1000,
 				energypershot = 45000,
 				reloadtime = 0.5,
 				customparams = {
@@ -167,7 +167,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 2,
 				range = 7550,
-				metalpershot = 8500,
+				metalpershot = 15000,
 				energypershot = 180000,
 				reloadtime = 0.5,
 				customparams = {
@@ -184,7 +184,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 0.5,
 				range = 7550,
-				metalpershot = 250,
+				metalpershot = 300,
 				energypershot = 12500,
 				reloadtime = 0.5,
 				customparams = {
@@ -201,7 +201,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 1,
 				range = 7550,
-				metalpershot = 970,
+				metalpershot = 1000,
 				energypershot = 45000,
 				reloadtime = 0.5,
 				customparams = {
@@ -218,7 +218,7 @@ local NewUnits = {
 			arm_botrail = {
 				stockpiletime = 2,
 				range = 7550,
-				metalpershot = 8500,
+				metalpershot = 15000,
 				energypershot = 180000,
 				reloadtime = 0.5,
 				customparams = {
