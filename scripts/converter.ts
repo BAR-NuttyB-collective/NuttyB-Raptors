@@ -223,22 +223,38 @@ async function luaFileToBase64Url(
 		// 	: content
 		const optimizedContent = content
 
-		minified =
-			extractTopComments(optimizedContent) +
-			(destPath.includes('units')
-				? luafmt
-						.Minify(optimizedContent, {
-							RenameVariables: true,
-							RenameGlobals: false,
-							SolveMath: true,
-						})
-						.replace(/.*?(\{.*)/, '$1')
-				: luafmt.Minify(optimizedContent, {
-					RenameVariables: true,
-					RenameGlobals: false,
-					SolveMath: true,
-				})
-			)
+		// Extract top comments first (the first 3 lines starting with --).
+		const topComments = extractTopComments(optimizedContent)
+		
+		// Remove all comments from content before minifying.
+		// NOTE: lua-format (Herrtt/luamin.js) automatically adds a header comment block
+		// to minified output with no option to disable it. We must strip comments from
+		// the input to prevent them from being included, then add back only the top comments.
+		let contentWithoutComments = optimizedContent
+		// Remove multi-line block comments: --[[ ... --]].
+		contentWithoutComments = contentWithoutComments.replace(/--\[\[[\s\S]*?--\]\]/g, '')
+		// Remove single-line comments.
+		contentWithoutComments = contentWithoutComments
+			.split('\n')
+			.filter(line => !/^\s*--.*/.test(line))
+			.join('\n')
+			.trim()
+
+		const minifyOptions = {
+			RenameVariables: true,
+			RenameGlobals: false,
+			SolveMath: true,
+		}
+
+		let minifiedCode = luafmt.Minify(contentWithoutComments, minifyOptions)
+
+		// lua-format adds its own header comment block. Remove it and trim whitespace.
+		minifiedCode = minifiedCode.replace(/--\[\[[\s\S]*?--\]\]/g, '').trim()
+
+		// Strip the 'return' keyword from all files (may or may not have space after it).
+		minifiedCode = minifiedCode.replace(/^return\s*/, '')
+
+		minified = topComments + minifiedCode
 	} catch (err) {
 		console.error(err)
 		process.exit(0)
