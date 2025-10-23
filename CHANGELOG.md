@@ -30,18 +30,18 @@ All notable changes to this project are documented in this file. This changelog 
 ## 2025-08
 
 ### Changed
-- 2025-08-26: **adjust range from Unit Launchers to match actual range** - Cannon can't raise higher, so it can't fire further (#26) - *tetrisface*
-- 2025-08-25: **regenerate base64 files** - *00fast00*
+- 2025-08-26: **adjust range from Unit Launchers to match actual range** - Cannon can't raise higher, so it can't fire further (#26) - *timuela*
+- 2025-08-25: **regenerate base64 files** - *tetrisface*
 - 2025-08-23: **regenerate base64 files** - *timuela*
-- 2025-08-23: **added Chimera and Dragon's Maw to commander** (#24) - *tetrisface*
-- 2025-08-14: **new t4 air rework** - *timuela*
+- 2025-08-23: **added Chimera and Dragon's Maw to commander** (#24) - *timuela*
+- 2025-08-14: **new t4 air rework** - *Backbash*
 - 2025-08-14: **unit/wave update** - *Backbash*
 - 2025-08-14: **update to base64** - *Backbash*
 - 2025-08-14: **update tweakunits3.lua** - *Backbash*
 - 2025-08-14: **update tweakunits2.lua** - *rcorex*
 - 2025-08-14: **update tweakunits1.lua** - *rcorex*
 - 2025-08-12: **update all raptor HP multiplier files** (1.3X through 5.0X) - *rcorex*
-- 2025-08-03: **set expire time 11 sec on hive launched raptors** - *rcorex*
+- 2025-08-03: **set expire time 11 sec on hive launched raptors** - *tetrisface*
 - 2025-08-03: **add expire time on hive launched raptors** - *tetrisface*
 - 2025-08-01: **add some features to converter** - *tetrisface*
 - 2025-08-01: **b64 urls** - *tetrisface*
@@ -75,6 +75,7 @@ All notable changes to this project are documented in this file. This changelog 
 - 2025-07-20: **update to T4 defenses** - *Backbash*
 - 2025-07-20: **update to Raptor HP multipliers** - *Backbash*
 - 2025-07-20: **exclude dead scav commanders from being not reclaimable** - *rcorex*
+- 2025-07-19: **add mercury** - *tetrisface*
 - 2025-07-19: **nerf** - *tetrisface*
 - 2025-07-18: **test to move announcement to defs** - *tetrisface*
 - 2025-07-18: **test to put paratrooper in defs instead of units** - *tetrisface*

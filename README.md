@@ -29,11 +29,11 @@ make lua
 
 This project has been made possible by the contributions of:
 
-- [Backbash](https://github.com/Backbash) - Project owner, balance changes, raptor updates
+- [Backbash](https://github.com/Backbash) - Project owner, balance changes, raptor updates, T4 air rework
 - [tetrisface](https://github.com/tetrisface) - Converter, t3 eco, tooling, and extensive tweaks
 - [rcorex](https://github.com/rcorex) - Raptor mechanics, spawn system, balance updates
 - [00fast00](https://github.com/00fast00) - Launcher rebalance, LRPC adjustments, recent features
-- [timuela](https://github.com/timuela) - T4 air rework
+- [timuela](https://github.com/timuela) - Unit launcher range adjustments
 - [Lu5ck](https://github.com/Lu5ck) - Base64 automation
 - [autolumn](https://github.com/autolumn) - Helper commands
 
