@@ -10,39 +10,41 @@ return {
 					default = 33000
 				},
 				areaofeffect = 60,
-				energypershot = 8000,
+				energypershot = 7000,
 				range = 2400,
-				reloadtime = 9,
+				reloadtime = 8.5,
 				turnrate = 20000
 			}
 		}
 	},
 	corint = {
 		health = 13000,
+		metalcost = 6900,
 		weapondefs = {
 			CORINT_MAIN = {
 				damage = {
 					commanders = 480,
 					default = 85000
 				},
-				areaofeffect = 230,
-				edgeeffectiveness = 0.6,
-				energypershot = 15000,
-				range = 2700,
-				reloadtime = 18
+				areaofeffect = 250,
+				edgeeffectiveness = 0.7,
+				energypershot = 17000,
+				range = 2800,
+				reloadtime = 16
 			}
 		}
 	},
 	leglrpc = {
 		health = 13000,
+		metalcost = 6300,
 		weapondefs = {
 			LEGLRPC_MAIN = {
 				damage = {
 					commanders = 480,
 					default = 4500
 				},
-				energypershot = 2000,
-				range = 2000,
+				energypershot = 1500,
+				range = 2200,
 				reloadtime = 2,
 				turnrate = 30000
 			}
