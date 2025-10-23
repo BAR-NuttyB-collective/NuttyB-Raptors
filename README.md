@@ -1,31 +1,62 @@
-# Requirements
+# 🦖 Collective NuttyB Raptors
 
-- [Docker](https://www.docker.com/products/docker-desktop/)
-- [make](https://scoop.sh/scoopinstaller-dev.github.io/#/apps?q=make&id=c43ff861c0f1713336e5304d85334a29ffb86317)
+A comprehensive modification for Beyond All Reason's Raptor Defense mode, featuring extensive balance changes, new units, and enhanced gameplay mechanics.
 
-# Usage
+## 📚 Documentation
 
-This command links the local [base64url folder] and [lua folder](lua) folders, builds docker container and processes the tweaks from the lua folder into the base64url and copies the spads commands to clipboard:
+- **[Wiki](https://github.com/BAR-NuttyB-collective/NuttyB-Raptors/wiki)** - Complete guides and documentation
+  - [Newcomers Guide](https://github.com/BAR-NuttyB-collective/NuttyB-Raptors/wiki/Newcomers-Guide) - Step-by-step build orders for Cortex, Armada, and Legion
+  - [Advanced Guide](https://github.com/BAR-NuttyB-collective/NuttyB-Raptors/wiki/Advanced-Guide) - Economy optimization, widgets, and advanced tactics
+- **[Collective NuttyB Configurator](https://bar-nuttyb-collective.github.io/configurator/)** - Web-based configuration tool
+- **[Changelog](CHANGELOG.md)** - Detailed version history with author attributions
 
+## 🎮 Quick Start for Players
+
+### Getting the Mod
+Use the [Collective NuttyB Configurator](https://bar-nuttyb-collective.github.io/configurator/) to generate your custom configuration with the tweaks you want.
+
+### Recommended Widgets
+- [New Raptor Panel](https://github.com/goldjee/BAR-Widgets/tree/main/raptor-panel) - Detailed damage stats
+- [Reclaim Selected](https://github.com/manshanko/bar-widgets/blob/main/cmd_reclaim_selected.lua) - Essential one-button reclaim
+- [Holo Place](https://github.com/timuela/BAR-widgets/blob/main/holo_place_no_hijacking.lua) - Auto-place buildings
+- [Layout Planner](https://github.com/noryon/BARWidgets/tree/main/LayoutPlanner) - Perfect placement helper
+
+## 🛠️ Development
+
+### Building Tweaks
+
+Convert Lua tweaks to base64url format and copy SPADS commands to clipboard:
 ```shell
-make b64
+make b64-local
 ```
 
-Several other commands (targets) are in the [Makefile](Makefile)
-
-Same as `make b64` but to other way around. Converts base64url tweaks back into lua and tries format it somewhat similarly:
-
+Convert base64url tweaks back to Lua format:
 ```shell
 make lua
 ```
 
-# Release new version to [The Paste Machine Spreadsheet](https://docs.google.com/spreadsheets/d/1QSVsuAAMhBrhiZdTihVfSCwPzbbZWDLCtXWP23CU0ko)
+Additional commands are available in the [Makefile](Makefile).
 
-1. Copy the Sheet within the Spreadsheet. As a backup. Can even copy the whole Spreadsheet if changing more.
-2. Execute `make b64` in the nuttyb repo (what is done above).
-3. Paste your clipboard on top of the tweaks column in the data sheet (probably column C) in the sheet.
+### Release Process
 
-# Contributors
+1. Use the [Collective NuttyB Configurator](https://bar-nuttyb-collective.github.io/configurator/) to update configurations
+2. Update the [Wiki](https://github.com/BAR-NuttyB-collective/NuttyB-Raptors/wiki) with any significant changes
+
+## 🎯 Key Features
+
+- **Balanced Economy**: Optimized T1/T2/T3 economy progression
+- **Enhanced Defenses**: Rebalanced turrets, shields, and epic defenses
+- **Commander Improvements**: Expanded buildoptions and stockpile adjustments
+- **Unit Tweaks**: Launcher rebalances, LRPC adjustments, and more
+- **Quality of Life**: Cross-faction building support, improved tooltips
+
+## 📖 Community Resources
+
+- [NuttyB Discussion on BAR Discord](https://discord.com/channels/549281623154229250/1168959237641216131)
+- [100 Queens Replay](https://www.beyondallreason.info/replays?gameId=59d5c568d459673a59b605cfa810fcee)
+- [100 Queens YouTube Video](https://www.youtube.com/watch?v=WL4swUdSSCY)
+
+## 👥 Contributors
 
 This project has been made possible by the contributions of:
 
@@ -37,6 +68,8 @@ This project has been made possible by the contributions of:
 - [Lu5ck](https://github.com/Lu5ck) - Base64 automation
 - [autolumn](https://github.com/autolumn) - Helper commands
 
-# Todo
+Special thanks to the wiki authors: **Cynder Quinn (CQs)** and **Fast**
 
-- Make web app
+## 📜 License
+
+See [LICENSE](LICENSE) file for details.
