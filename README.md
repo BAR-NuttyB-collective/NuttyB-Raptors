@@ -35,6 +35,8 @@ Convert base64url tweaks back to Lua format:
 make lua
 ```
 
+For debugging purposes you can use https://nntpaul.github.io/ to decode/encode tweaks.
+
 Additional commands are available in the [Makefile](Makefile).
 
 ### Release Process
