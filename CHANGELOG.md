@@ -5,26 +5,29 @@ All notable changes to this project are documented in this file. This changelog 
 ## 2025-10
 
 ### Added
-- 2025-10-23: **feat: launcher rebalance - unified range (7550) and reload (0.5s) across all launchers** [docs](https://github.com/BAR-NuttyB-collective/NuttyB-Raptors/wiki/2025-10-23_launcher_rebalances) - *00fast00*
-- 2025-10-23: **feat: expand legion commander buildoptions** - Added leglab, legeconv, leglrpc, armannit3 to various legion commander levels for more strategic options - *00fast00*
-- 2025-10-22: **feat: double arm com stockpile** - *00fast00*
-- 2025-10-22: **feat: add exp inheritance to all commanders** - *00fast00*
-- 2025-10-22: **feat: limit T3 Factories to 1** - *00fast00*
+- 2025-10-23: **feat: launcher rebalance - unified range (7550) and reload (0.5s) across all launchers** [docs](https://github.com/BAR-NuttyB-collective/NuttyB-Raptors/wiki/2025-10-23_launcher_rebalances) - *Fast*
+- 2025-10-23: **feat: expand legion commander buildoptions** - Added leglab, legeconv, leglrpc, armannit3 to various legion commander levels for more strategic options - *Fast*
+- 2025-10-22: **feat: double arm com stockpile** - *Fast*
+- 2025-10-22: **feat: add exp inheritance to all commanders** - *Fast*
+- 2025-10-22: **feat: limit T3 Factories to 1** - *Fast*
 
 ### Changed
-- 2025-10-23: **launcher metal costs adjusted** - T1: 250→300, T2: 970→1000, T3: 8500→15000 - *00fast00*
-- 2025-10-23: **premium launcher costs rebalanced** - legjav, armraz, corakt4, cordemon, armpwt4 - *00fast00*
-- 2025-10-23: **chore: switch from luamin to lua-format for minification** - *00fast00*
-- 2025-10-23: **chore: regenerate base64url files with new minifier** - *00fast00*
-- 2025-10-23: **refactor: renumber cortron buildoptions array indices** - *00fast00*
-- 2025-10-23: **remove base64 code from the repo** - *00fast00*
+- 2025-10-23: **launcher metal costs adjusted** - T1: 250→300, T2: 970→1000, T3: 8500→15000 - *Fast*
+- 2025-10-23: **premium launcher costs rebalanced** - legjav, armraz, corakt4, cordemon, armpwt4 - *Fast*
+- 2025-10-23: **chore: switch from luamin to lua-format for minification** - *Fast*
+- 2025-10-23: **chore: regenerate base64url files with new minifier** - *Fast*
+- 2025-10-23: **refactor: renumber cortron buildoptions array indices** - *Fast*
+- 2025-10-23: **remove base64 code from the repo** - *Fast*
 
 ### Fixed
-- 2025-10-22: **fix: converter script** - *00fast00*
+- 2025-10-22: **fix: converter script** - *Fast*
+
+### Reverted
+- 2025-10-24: **Revert LRPC Rebalance V3** - Lu5ck identified critical mistakes in the LRPC rebalance implementation - *Lu5ck*
 
 ### Documentation
-- 2025-10-23: **docs: add launcher rebalance documentation with CSV data** - *00fast00*
-- 2025-10-22: **docs: add LRPC rebalance documentation** - *00fast00*
+- 2025-10-23: **docs: add launcher rebalance documentation with CSV data** - *Fast*
+- 2025-10-22: **docs: add LRPC rebalance documentation** - *Fast*
 
 ## 2025-08
 
